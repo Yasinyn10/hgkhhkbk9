@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<style>
+     body{ 
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 7vw;
+    background-image: linear-gradient(to right,rgba(33, 60, 212, 0.503),rgba(134, 134, 247, 0.673)); 
+    justify-content: center;
+    align-items: center;}
+    .colort{
+    color:rgb(255, 255, 255);}
+    .buttonstyle{ 
+    background-image:linear-gradient(to bottom,#ffffff ,#060678b3);
+    border-radius: 30px;
+    width: 20vw;
+    height: 10vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 7vw;
+    font-weight: bolder;} 
+</style>
+<html>
+<body>
+
+<center>
+<h1 class="colort">My Home Automation</h1>
+
+<h3 class="colort"> LED 1 </h3>
+<button class="buttonstyle" onclick="window.location = 'http://'+location.hostname+'/led1/on'">On</button><button class="buttonstyle"  onclick="window.location = 'http://'+location.hostname+'/led1/off'">Off</button>
+<h3 class="colort"> LED 2 </h3>
+<button class="buttonstyle"  onclick="window.location = 'http://'+location.hostname+'/led2/on'">On</button><button class="buttonstyle"  onclick="window.location = 'http://'+location.hostname+'/led2/off'">Off</button>
+
+</center>
+</body>
+</html>
